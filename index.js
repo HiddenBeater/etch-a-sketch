@@ -3,8 +3,12 @@ let rows = 16;
 let cols = 16;
 
 const sketchArea = document.querySelector("#sketch-area");
-sketchArea.style.width = `${GRIDSIDE}`+ 'px';
-sketchArea.style.heigh = `${GRIDSIDE}` + 'px';
+sketchArea.style.width = `${GRIDSIDE}px`;
+sketchArea.style.heigh = `${GRIDSIDE}px`;
+
+function setBackgroundColor(){
+    this.style.backgroundColor = 'black';
+}
 
 function createGridCells(){
     for (let i = 0; i < (rows * cols); i++){
@@ -15,6 +19,8 @@ function createGridCells(){
         gridCell.classList.add("cell");
 
         sketchArea.appendChild(gridCell);
+        gridCell.addEventListener("mouseover", setBackgroundColor)
+
     }
 }
 
