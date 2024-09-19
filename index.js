@@ -18,6 +18,10 @@ function createGridCell(){
 
             gridCell.style.width =`(${(gridSide / cols) - 2}px`;
             gridCell.style.height = `(${(gridSide / rows) - 2}px`;
-            
+            gridCell.classList.add('cell');
+
+            sketchArea.appendChild(gridCell);
     }
 }
+
+createGridCell();
