@@ -1,9 +1,3 @@
-const container = document.getElementsByClassName("container");
-
-// Add a div
-const div = document.createElement('div');
-container.appendChild(div);
-
 const gridSide = 600;
 let rows = 16;
 let cols = 16;

@@ -1,8 +1,18 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
+body {
+    background-color: red;
+}
+
+#sketch-area{
+    /* display: flex; */
+    background-color: white;
+    /* margin: 100px auto; */
+}
+
+.cell{
+    border: 1px solid whitesmoke;
 }
