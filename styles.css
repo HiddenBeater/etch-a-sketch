@@ -34,3 +34,13 @@ body {
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
 }
+
+#slider-value{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#slider:hover{
+    opacity: 1;
+    
+}
