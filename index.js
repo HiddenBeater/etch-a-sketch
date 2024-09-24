@@ -10,7 +10,15 @@ sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`;
 sketchArea.style.width = sketchArea.style.height = `${GRIDSIDE}px`;
 
 function setBackgroundColor(){
-    this.style.backgroundColor = 'black';
+    this.style.backgroundColor = randomColor();
+}
+
+function randomColor(){
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+        color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') +')';
 }
 
 function createGridCells(squaresPerSide){
