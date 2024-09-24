@@ -40,7 +40,16 @@ body {
     text-align: center;
 }
 
-#slider:hover{
+.slider:hover{
     opacity: 1;
     
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04aa6d;
+    cursor: grab;
 }
